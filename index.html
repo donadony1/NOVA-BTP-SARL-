@@ -1,1210 +1,509 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOVA BTP SARL - Ingénierie BTP au Tchad, N'Djamena</title>
-  <meta name="description" content="NOVA BTP SARL, partenaire de confiance en génie civil, construction, rénovation, décoration et formation certifiante à N'Djamena, Tchad. Agrément Cat. A - Garantie Décennale." />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Construction & Génie Civil au Tchad | Nova BTP SARL</title>
+    <meta name="description"
+        content="Nova BTP SARL : construction, génie civil, rénovation, peinture, décoration et formation à N'Djamena, Tchad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-
-<!-- ===== HEADER ===== -->
-<header id="main-header" class="sticky-top">
-  <div class="topbar py-2">
-    <div class="container-xl">
-      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-        <div class="d-flex flex-wrap align-items-center gap-3">
-          <span class="topbar-info"><i class="bi bi-geo-alt-fill text-orange"></i> N'Djamena, Gassi, Tchad</span>
-          <span class="d-none d-md-inline topbar-sep">|</span>
-          <a href="tel:+23568383708" class="topbar-info topbar-link">
-            <i class="bi bi-telephone-fill text-orange"></i> +235 68 38 37 08 / +235 87 91 12 08
-          </a>
-          <span class="d-none d-lg-inline topbar-sep">|</span>
-          <a href="mailto:contact@novabtptchad.com" class="topbar-info topbar-link d-none d-lg-inline-flex">
-            <i class="bi bi-envelope-fill text-orange"></i> contact@novabtptchad.com
-          </a>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <span class="topbar-info"><i class="bi bi-clock text-muted"></i> Lun - Sam : 07h30 - 18h00</span>
-          <span class="badge-urgence"><i class="bi bi-exclamation-circle-fill"></i> Urgences 24/7</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-xl navbar-light bg-white py-0 border-bottom">
-    <div class="container-xl">
-      <button class="navbar-brand-btn nav-link-page" data-page="home">
-        <div class="brand-logo">
-          <!-- <div class="brand-logo-icon"><span class="brand-n">N</span></div> -->
-          <div class="brand-logo-text">
-            <img src="logo.jpg" style="width: 6rem;" >
-            <!-- <span class="brand-name">NOVA BTP</span>
-            <span class="brand-subtitle">SARL - TCHAD</span>  -->
-          </div>
-        </div>
-      </button>
-
-      <div class="d-flex align-items-center gap-2 d-xl-none">
-        <a href="https://wa.me/23568383708" target="_blank" class="btn btn-whatsapp btn-sm">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-1">
-          <li class="nav-item">
-            <button class="nav-link nav-link-page fw-semibold" data-page="home">Accueil</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link nav-link-page fw-semibold" data-page="about">À Propos</button>
-          </li>
-          <li class="nav-item dropdown-hover">
-            <button class="nav-link nav-link-page fw-semibold d-inline-flex align-items-center gap-1" data-page="services">
-              Services <i class="bi bi-chevron-down small"></i>
-            </button>
-            <div class="nav-dropdown-menu">
-              <div class="nav-dropdown-header">6 Pôles Techniques Nova BTP</div>
-              <button class="nav-dropdown-item nav-link-page" data-page="services" data-service="genie-civil">
-                <i class="bi bi-building text-orange"></i>
-                <div><div class="fw-bold">Génie Civil &amp; Construction</div><div class="text-muted small">Fondations, gros oeuvre, béton armé, VRD</div></div>
-              </button>
-              <button class="nav-dropdown-item nav-link-page" data-page="services" data-service="decoration-design">
-                <i class="bi bi-palette text-orange"></i>
-                <div><div class="fw-bold">Décoration &amp; Architecture d'Intérieur</div><div class="text-muted small">Faux plafonds staff, LED, agencements</div></div>
-              </button>
-              <button class="nav-dropdown-item nav-link-page" data-page="services" data-service="peinture-revetements">
-                <i class="bi bi-brush text-orange"></i>
-                <div><div class="fw-bold">Peinture &amp; Revêtements Techniques</div><div class="text-muted small">Anti-chaleur -6°C, résine époxy sols</div></div>
-              </button>
-              <button class="nav-dropdown-item nav-link-page" data-page="services" data-service="renovation-rehabilitation">
-                <i class="bi bi-tools text-orange"></i>
-                <div><div class="fw-bold">Rénovation &amp; Réhabilitation</div><div class="text-muted small">Reprise en sous-oeuvre, surélévations</div></div>
-              </button>
-              <button class="nav-dropdown-item nav-link-page" data-page="services" data-service="retouche-finitions">
-                <i class="bi bi-rulers text-orange"></i>
-                <div><div class="fw-bold">Retouche &amp; Finitions de Précision</div><div class="text-muted small">Carrelage 60x120, menuiserie alu</div></div>
-              </button>
-              <button class="nav-dropdown-item nav-link-page border-top" data-page="training">
-                <i class="bi bi-mortarboard text-orange"></i>
-                <div><div class="fw-bold">Formation en Génie Civil</div><div class="text-muted small">Académie pratique certifiée</div></div>
-              </button>
-              <div class="nav-dropdown-footer">
-                <button class="nav-link-page text-orange fw-bold small" data-page="services">Voir les 6 pôles au complet</button>
-              </div>
+    <header class="fixed-top">
+        <div class="topbar d-none d-xl-block">
+            <div class="container d-flex justify-content-between flex-wrap gap-2">
+                <span><span class="material-symbols-outlined">location_on</span> N'Djamena, Gassi, Tchad &nbsp; <span
+                        class="material-symbols-outlined">call</span> +235 68 38 37 08 / +235 87 91 12 08 / +235 91 71
+                    98 94 &nbsp; <span class="d-none d-xxl-inline"><span class="material-symbols-outlined">mail</span>
+                        contact@novabtptchad.com</span></span>
+                <span class="d-none d-xxl-inline"><span class="material-symbols-outlined">schedule</span> Lun - Sam :
+                    07h30 - 18h00 &nbsp; <span class="material-symbols-outlined">emergency</span> Urgences chantiers
+                    24/7</span>
             </div>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link nav-link-page fw-semibold" data-page="projects">Réalisations</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link nav-link-page fw-semibold" data-page="training">Formation</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link nav-link-page fw-semibold" data-page="contact">Contact</button>
-          </li>
-        </ul>
-        <div class="d-flex align-items-center gap-2 ms-xl-3 mt-3 mt-xl-0 pb-3 pb-xl-0">
-          <a href="https://wa.me/23568383708" target="_blank" class="btn btn-whatsapp btn-sm d-none d-xl-inline-flex">
-            <i class="bi bi-whatsapp me-1"></i> WhatsApp
-          </a>
-          <button class="btn btn-orange btn-sm" id="btn-open-quote-nav">
-            Demander un devis <i class="bi bi-arrow-right ms-1"></i>
-          </button>
         </div>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<!-- ===== MAIN SPA CONTAINER ===== -->
-<main id="app-main">
-
-  <!-- ======================================================
-       PAGE: HOME
-  ====================================================== -->
-  <div id="page-home" class="page-content">
-
-    <!-- HERO -->
-    <section class="hero-section position-relative overflow-hidden text-white">
-      <div class="hero-bg-img"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-glow-1"></div>
-      <div class="hero-glow-2"></div>
-      <div class="container-xl position-relative py-5" style="z-index:2;">
-        <div class="row align-items-center g-5 py-4">
-          <div class="col-lg-7">
-            <div class="badge-pill mb-4">
-              <span class="dot-pulse"></span>
-              GÉNIE CIVIL &amp; BTP AU TCHAD — N'DJAMENA
-            </div>
-            <h1 class="hero-title">
-              NOVA BTP SARL :<br>
-              <span class="text-gradient">L'Excellence Technique</span>
-              et la Rigueur au Cœur de Vos Projets
-            </h1>
-            <p class="hero-subtitle mt-3">
-              Partenaire de confiance des institutions, entreprises et particuliers au Tchad.
-              Spécialiste agréé en construction gros oeuvre, réhabilitation, étanchéité thermique
-              sahélienne, finitions haut de gamme et formation certifiante.
-            </p>
-            <div class="row g-2 mt-3">
-              <div class="col-6 col-sm-4">
-                <div class="hero-badge">
-                  <i class="bi bi-shield-check text-success"></i>
-                  <div>
-                    <strong class="d-block text-white small">Agrément Cat. A</strong>
-                    <span class="text-muted" style="font-size:.7rem;">Min. Infrastructures</span>
-                  </div>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img src="assets/logo.png"
+                        alt="Logo Nova BTP SARL"><span class="brand-t">NOVA BTP SARL<small
+                            class="d-none d-sm-block">Ingénierie &amp; BTP Tchad</small></span></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="nv">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="a-propos.html">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#realisations">Réalisations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#formation">Formation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions d-flex gap-2 flex-column flex-xl-row"><a class="btn btn-wa"
+                            href="https://wa.me/23568383708" target="_blank" rel="noopener"><span
+                                class="material-symbols-outlined">chat</span><span class="d-xl-none d-xxl-inline">
+                                WhatsApp</span></a><a class="btn btn-orange" href="contact.html#devis">Devis gratuit
+                            <span class="material-symbols-outlined">arrow_forward</span></a></div>
                 </div>
-              </div>
-              <div class="col-6 col-sm-4">
-                <div class="hero-badge">
-                  <i class="bi bi-award text-warning"></i>
-                  <div>
-                    <strong class="d-block text-white small">Garantie Décennale</strong>
-                    <span class="text-muted" style="font-size:.7rem;">Couverture CNPS 100%</span>
-                  </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <span class="tag mb-3">N'Djamena • Tchad</span>
+                        <h1>Construisons vos projets avec <span style="color:var(--orange)">expertise</span> et
+                            savoir-faire</h1>
+                        <p class="lead-s my-4">Construction, génie civil, rénovation, peinture, décoration et formation
+                            professionnelle au Tchad. Le partenaire de référence pour particuliers, entreprises et
+                            institutions publiques.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4"><a class="btn btn-orange"
+                                href="contact.html#devis">DEMANDER UN DEVIS <span
+                                    class="material-symbols-outlined">arrow_forward</span></a><a
+                                class="btn btn-outline-navy" href="contact.html"><span
+                                    class="material-symbols-outlined">call</span> NOUS CONTACTER</a></div>
+                        <div class="row g-3 stat">
+                            <div class="col-4"><b data-count="120" data-prefix="+">+120</b><span>Chantiers livrés</span>
+                            </div>
+                            <div class="col-4"><b data-count="99" data-suffix="%">99%</b><span>Délais respectés</span>
+                            </div>
+                            <div class="col-4"><b>10 Ans</b><span>Garantie décennale</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6"><img class="hero-img"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIypf4VhrmuqbQewoI4o--YH9st4A-qWB4_aRXYGvNNwW0YQOvl2eeRC9ueR3xb7xftoOHINmoPR1P8StKIHJDSO3DdtGoy_5_tIhj0H7wWBNwoSOfwRzKHqGN7Y3zv61_PgQZCB_heYjkgg50Im7nC0lY0b8rvFT9KSGcJ3zo56kxQFP54_UCdIajU4oasGhqM8L-ZWnG6GCUHmoSGHkrr8k4rEntu1fmjiItPwrPa8E21z07nlVB6g"
+                            alt="Équipe d'ingénieurs Nova BTP sur chantier à N'Djamena"></div>
                 </div>
-              </div>
-              <div class="col-12 col-sm-4">
-                <div class="hero-badge">
-                  <i class="bi bi-compass text-info"></i>
-                  <div>
-                    <strong class="d-block text-white small">Normes Sahel</strong>
-                    <span class="text-muted" style="font-size:.7rem;">Résistance climat 50°C</span>
-                  </div>
+                <div class="row g-3 mt-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="card-bp py-3"><b class="font-outfit text-navy"><span
+                                    class="material-symbols-outlined">engineering</span> Expertise BTP</b>
+                            <p class="small text-secondary mb-0 mt-1">Ingénieurs et techniciens qualifiés au Tchad.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card-bp py-3"><b class="font-outfit text-navy"><span
+                                    class="material-symbols-outlined">high_quality</span> Qualité Matériaux</b>
+                            <p class="small text-secondary mb-0 mt-1">Ciments, aciers et granulats conformes.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card-bp py-3"><b class="font-outfit text-navy"><span
+                                    class="material-symbols-outlined">schedule</span> Respect des Délais</b>
+                            <p class="small text-secondary mb-0 mt-1">Planification par jalons, livraison garantie.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="card-bp py-3"><b class="font-outfit text-navy"><span
+                                    class="material-symbols-outlined">handshake</span> Accompagnement A-Z</b>
+                            <p class="small text-secondary mb-0 mt-1">De l'étude géotechnique aux finitions.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <button class="btn btn-orange btn-lg" id="btn-hero-quote">
-                <i class="bi bi-file-text me-2"></i> Demander un Devis Gratuit
-              </button>
-              <button class="btn btn-glass btn-lg" id="btn-hero-estimator">
-                <i class="bi bi-calculator text-warning me-2"></i> Simulateur de Coût (FCFA)
-              </button>
-              <button class="btn btn-link text-white nav-link-page" data-page="projects">
-                Voir nos réalisations <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-            <div class="d-flex align-items-center gap-2 mt-3 text-muted small">
-              <i class="bi bi-telephone-fill text-success"></i>
-              <span>Assistance directe à N'Djamena :</span>
-              <a href="tel:+23568383708" class="text-white fw-bold text-decoration-none">+235 68 38 37 08</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-img-wrap position-relative">
-              <div class="hero-float-card hero-float-tl d-none d-sm-flex">
-                <div class="float-icon-box">15+</div>
-                <div>
-                  <div class="fw-bold small text-dark">Ans d'Expertise BTP</div>
-                  <div class="text-muted" style="font-size:.7rem;">N'Djamena et Provinces</div>
+        </section>
+        <section class="sec ">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-4 g-lg-5"><img class="w-100 rounded-3"
+                            style="aspect-ratio:3/4;object-fit:cover;object-position:top" src="assets/directeur.jpg"
+                            alt="Asrane Gauthier, Directeur Général de Nova BTP SARL"></div>
+                    <div class="col-lg-7"><span class="eyebrow">À propos</span>
+                        <h2>Bâtir des ouvrages durables au cœur du Sahel et de l'Afrique Centrale</h2>
+                        <p class="mt-3">Nova BTP SARL est une entreprise tchadienne spécialisée dans la construction, le
+                            génie civil, la rénovation, la peinture et la décoration. Nous accompagnons nos clients avec
+                            des solutions adaptées à leurs besoins, à leur budget et au climat sahélien.</p>
+                        <p>Notre ambition : contribuer à la réalisation de bâtiments solides, fonctionnels et
+                            esthétiques, au service des particuliers, des entreprises privées et des institutions
+                            gouvernementales.</p>
+                        <div class="row g-3 my-4">
+                            <div class="col-sm-6">
+                                <div class="card-bp py-3"><span class="material-symbols-outlined">badge</span>
+                                    <b>Direction Générale</b><br>Asrane Gauthier</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card-bp py-3"><span class="material-symbols-outlined">location_on</span>
+                                    <b>Siège Opérationnel</b><br>N'Djamena, Quartier Gassi</div>
+                            </div>
+                        </div>
+                        <a class="btn btn-navy" href="a-propos.html">En savoir plus sur nos engagements <span
+                                class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
                 </div>
-              </div>
-              <div class="hero-img-frame">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-                     alt="Ingénieurs NOVA BTP sur chantier à N'Djamena" class="hero-img" />
-                <div class="hero-img-overlay"></div>
-                <div class="hero-img-badge">
-                  <div>
-                    <div class="text-warning fw-bold" style="font-size:.65rem;">Chantiers Actifs 2026</div>
-                    <div class="text-white small fw-bold">Supervision géotechnique et contrôles béton</div>
-                  </div>
-                  <span class="badge bg-success bg-opacity-25 text-success" style="font-size:.65rem;">Normes BAEL 91</span>
+            </div>
+        </section>
+        <section class="sec bg-soft">
+            <div class="container">
+                <div class="mb-5"><span class="eyebrow">Notre savoir-faire</span>
+                    <h2>Des solutions complètes pour tous vos ouvrages</h2>
+                    <p class="lead-s mt-2">De l'ingénierie lourde aux détails architecturaux les plus fins, des
+                        prestations rigoureuses conformes aux exigences sahéliennes.</p>
                 </div>
-              </div>
-              <div class="hero-float-card hero-float-br d-none d-sm-flex">
-                <div class="float-icon-orange"><i class="bi bi-building-check"></i></div>
-                <div>
-                  <span class="fw-bold d-block text-warning small">Entreprise Agréée</span>
-                  <span class="text-muted" style="font-size:.7rem;">RCCM : TD-NDJ-01-2022-B12</span>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">foundation</span></div>
+                            <h3>Génie civil & Construction</h3>
+                            <p class="mb-0 text-secondary">Conception et réalisation intégrale d'infrastructures :
+                                fondations profondes, gros œuvre en béton armé, élévations structurelles, VRD adaptés
+                                aux sols sahéliens.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">apartment</span></div>
+                            <h3>Décoration & Design</h3>
+                            <p class="mb-0 text-secondary">Aménagement des espaces intérieurs et extérieurs : plafonds
+                                suspendus décoratifs, éclairage d'ambiance architectural et agencements harmonieux.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">format_paint</span></div>
+                            <h3>Peinture & Revêtements</h3>
+                            <p class="mb-0 text-secondary">Peintures résistantes aux fortes chaleurs et poussières
+                                sahéliennes. Finitions mates, satinées, laquées et traitements d'étanchéité de façades.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">construction</span></div>
+                            <h3>Rénovation & Réhabilitation</h3>
+                            <p class="mb-0 text-secondary">Modernisation de bâtiments existants, renforcement de
+                                structures, réaménagement spatial et optimisation énergétique des locaux.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">brush</span></div>
+                            <h3>Retouche & Finitions</h3>
+                            <p class="mb-0 text-secondary">Correction minutieuse, calfeutrage, réparation de fissures,
+                                pose de plinthes, enduits fins pour une livraison irréprochable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">school</span></div>
+                            <h3>Formation en Génie Civil</h3>
+                            <p class="mb-0 text-secondary">Formations certifiantes : lecture de plans, métrés,
+                                ferraillage, QHSE et gestion de chantier pour étudiants et professionnels.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="text-center mt-5"><a class="btn btn-orange" href="services.html"><span
+                            class="material-symbols-outlined">description</span> Découvrir tous nos services</a></div>
             </div>
-          </div>
-        </div>
-        <!-- STATS -->
-        <div class="hero-stats border-top border-secondary border-opacity-25 mt-4 pt-4">
-          <div class="row text-center g-3">
-            <div class="col-6 col-md-3">
-              <div class="stat-number text-warning">120+</div>
-              <div class="stat-label">Projets Réalisés au Tchad</div>
-              <div class="stat-sub">Publics, privés et industriels</div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="stat-number text-white">15+</div>
-              <div class="stat-label">Années de Maîtrise Technique</div>
-              <div class="stat-sub">Direction et ingénieurs seniors</div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="stat-number text-warning">98%</div>
-              <div class="stat-label">Taux de Satisfaction Client</div>
-              <div class="stat-sub">Reconnaissance de conformité</div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div class="stat-number text-white">100%</div>
-              <div class="stat-label">Respect Délais et Budgets</div>
-              <div class="stat-sub">Planning contractuel garanti</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BANNER ESTIMATEUR -->
-    <section class="banner-estimateur py-4">
-      <div class="container-xl">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
-          <div class="d-flex align-items-center gap-3">
-            <div class="banner-icon-box"><i class="bi bi-calculator-fill text-warning fs-5"></i></div>
-            <div>
-              <h3 class="fw-black mb-0 small">Vous avez un projet de construction ou de rénovation à N'Djamena ?</h3>
-              <p class="mb-0 text-dark" style="font-size:.8rem;">Obtenez une première estimation budgetaire en FCFA en moins de 2 minutes.</p>
-            </div>
-          </div>
-          <div class="d-flex gap-2 flex-wrap">
-            <button class="btn btn-dark btn-sm fw-bold" id="btn-banner-estimator">Lancer le simulateur FCFA</button>
-            <button class="btn btn-outline-dark btn-sm fw-bold" id="btn-guide-technique">Guide Gros Oeuvre</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2"><i class="bi bi-buildings text-orange me-1"></i> NOS PÔLES D'EXPERTISE BTP</div>
-          <h2 class="section-title">Des Solutions Techniques Clés en Main au Tchad</h2>
-          <p class="section-subtitle mx-auto">Chaque corps d'état est encadré par des ingénieurs et techniciens expérimentés, garantissant le respect strict des normes de résistance, d'esthétique et de durabilité thermique.</p>
-        </div>
-        <div class="row g-4" id="home-services-grid"></div>
-        <div class="text-center mt-5">
-          <button class="btn btn-dark btn-lg nav-link-page" data-page="services">
-            Consulter tous nos pôles <i class="bi bi-arrow-right text-warning ms-2"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY NOVA BTP -->
-    <section class="py-section bg-light border-top border-bottom">
-      <div class="container-xl">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="section-label bg-warning bg-opacity-10 mb-3"><i class="bi bi-shield-check text-orange me-1"></i> LES ATOUTS TECHNIQUES NOVA BTP</div>
-            <h2 class="section-title">Pourquoi les Maîtres d'Ouvrage Nous Accordent Leur Confiance</h2>
-            <p class="text-muted">Construire au Sahel exige une maîtrise rigoureuse de la mécanique des sols, de la formulation thermique des bétons et de la sélection de matériaux résistants aux amplitudes thermiques sévères.</p>
-            <div class="d-flex flex-column gap-3 mt-4">
-              <div class="why-card">
-                <div class="why-icon"><i class="bi bi-compass text-warning"></i></div>
-                <div>
-                  <h5 class="small fw-bold text-navy mb-1">Adaptation aux sols et au climat tchadien</h5>
-                  <p class="text-muted mb-0" style="font-size:.8rem;">Étude systématique des sols argileux gonflants ou sableux de N'Djamena et des provinces.</p>
+        </section>
+        <section class="sec ">
+            <div class="container">
+                <div class="mb-5"><span class="eyebrow">Valeurs & excellence</span>
+                    <h2>Pourquoi confier vos projets à Nova BTP SARL ?</h2>
                 </div>
-              </div>
-              <div class="why-card">
-                <div class="why-icon"><i class="bi bi-award text-warning"></i></div>
-                <div>
-                  <h5 class="small fw-bold text-navy mb-1">Matériaux certifiés et Ciment CEM II</h5>
-                  <p class="text-muted mb-0" style="font-size:.8rem;">Aciers FeE500 haute adhérence contrôlés, agrégats lavés et bétons dosés selon les règles BAEL 91.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">engineering</span></div>
+                            <h3>Expertise</h3>
+                            <p class="mb-0 text-secondary">Équipe pluridisciplinaire : calcul de structure, géotechnique
+                                et gros œuvre.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">high_quality</span></div>
+                            <h3>Qualité</h3>
+                            <p class="mb-0 text-secondary">Matériaux normés (aciers FeE500, ciments certifiés) et
+                                finitions de précision.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">handshake</span></div>
+                            <h3>Accompagnement</h3>
+                            <p class="mb-0 text-secondary">Suivi personnalisé adapté au budget de chaque client, avec
+                                points d'étape réguliers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp">
+                            <div class="ico"><span class="material-symbols-outlined">assignment_turned_in</span></div>
+                            <h3>Engagement</h3>
+                            <p class="mb-0 text-secondary">Sérieux, transparence financière et sens des responsabilités
+                                sur chaque chantier.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="why-card">
-                <div class="why-icon"><i class="bi bi-clock text-warning"></i></div>
-                <div>
-                  <h5 class="small fw-bold text-navy mb-1">Respect scrupuleux du planning et du budget</h5>
-                  <p class="text-muted mb-0" style="font-size:.8rem;">Planning contractuel avec pénalités de retard à notre charge. Aucun dépassement non validé.</p>
+            </div>
+        </section>
+        <section class="sec bg-soft">
+            <div class="container">
+                <div class="mb-4" id="realisations"><span class="eyebrow">Portfolio de chantiers</span>
+                    <h2>Nos réalisations & chantiers récents</h2>
+                    <p class="lead-s mt-2">Aperçu de nos réalisations livrées à N'Djamena et dans les provinces du
+                        Tchad.</p>
                 </div>
-              </div>
-              <div class="why-card">
-                <div class="why-icon"><i class="bi bi-shield-check text-warning"></i></div>
-                <div>
-                  <h5 class="small fw-bold text-navy mb-1">Couverture sociale et sécurité chantier 100%</h5>
-                  <p class="text-muted mb-0" style="font-size:.8rem;">Ouvriers déclarés à la CNPS, EPI obligatoires, assurance responsabilité civile décennale.</p>
+                <div class="filters mb-4"><button class="filter-btn active" data-f="all">Tous les
+                        projets</button><button class="filter-btn" data-f="gros">Gros Œuvre & Bâtiment</button><button
+                        class="filter-btn" data-f="peinture">Peinture & Finition</button><button class="filter-btn"
+                        data-f="reno">Rénovation</button><button class="filter-btn" data-f="deco">Décoration</button>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="comparison-card">
-              <div class="comparison-glow"></div>
-              <span class="badge bg-orange text-white mb-3">RÉFÉRENTIEL TECHNIQUE SAHÉLIEN</span>
-              <h3 class="fw-bold text-white mb-4">Tableau Comparatif : Chantier Standard vs NOVA BTP</h3>
-              <div class="d-flex flex-column gap-3">
-                <div class="comparison-item">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="fw-bold text-warning small">Fondations &amp; Semelles</span>
-                    <span class="badge badge-norm">Norme BAEL</span>
-                  </div>
-                  <p class="text-slate-300 mb-1" style="font-size:.8rem;"><strong>Pratique courante :</strong> Semelles superficielles sans étude de sol, risques élevés de fissures.</p>
-                  <div class="comparison-nova"><i class="bi bi-check-circle-fill text-success me-1"></i><strong>NOVA BTP :</strong> Étude géotechnique au pénétromètre + longrines de chaînage rigidifiées anti-tassement.</div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 proj" data-cat="gros">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-z12Rg_v8ygKNPS_LBt3bMV2zAJ_Fu3h8-wWgkVrShJ4a-15jCeEAwFHR95Hk62-4YHIF3XZ2hyDitLsG21PTbB2FD3sK-OTLKStmgylzfiZGeQB-1EqfObDMwgx6OpCEGt1EkDTu0ZAhuKWtPoYraHLZEGZYNME7ISJTrwjmu9i4okI-p_NyEW7khecaJxGvXM2mKzYhnfhi4wTPVN-0YZJz6ud4ulgn1kErlhqtJ9wXdGQ4qog9Zw"
+                                alt="Complexe Résidentiel R+2" loading="lazy"><span class="tag mb-2">Gros Œuvre</span>
+                            <p class="meta mb-1">N'Djamena • Sabangali</p>
+                            <h3>Complexe Résidentiel R+2</h3>
+                            <p class="text-secondary mb-0">Construction clé en main : terrassement, semelles isolées,
+                                structure poteaux-poutres et planchers hourdis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 proj" data-cat="reno">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5F5rqz4hfFSaJbNBCZZN8jjY4zf8HcQT9VhNBAVy5-3Tvjte3kz2MyltyXg1Os8qZJbO1rzgoLnIGKOnxmwd-E2bk_EFAxecGmCtaHgkzXq9xLAbw_AMTq1Y8F2aFOw1GKnuEAjJ3Lt5DfbaMklzClks-zr4ohsdspK-XxfZ1KtDxJe7Gz6tEMpcTsrTeojvy30Z2cozd4g-SVnZkGY9wLI0fn6pRBSR2EoNwCr8gfD3g-eMoG4p0-w"
+                                alt="Siège Corporatif & Bureaux" loading="lazy"><span class="tag mb-2">Rénovation
+                                Lourde</span>
+                            <p class="meta mb-1">Avenue Charles de Gaulle</p>
+                            <h3>Siège Corporatif & Bureaux</h3>
+                            <p class="text-secondary mb-0">Réhabilitation intégrale, redistribution des espaces et
+                                renforcement des piliers porteurs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 proj" data-cat="deco">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk999-TkNnj3Eq78JmtnzD67SvR08RT4MnVUf7JJ7BamUkE0CZNznUonkv4bS5obYiLKPdR0yR33hpVowLaYqw_vBTfNzq7xZm3Ty4w4dAV5J7l784feRWA6dzYKS5AIxPs8e3pilHXyOguTKpbsRGUTchDtvBkCLbTJ4_WUl_5mMa1H5iwNkkkexVdzZRFZh1pVBFLt8L13j6S_SDXbHjuNvT_qCUh6mJ_mSJIm3ry4VIoq9B8oTX1A"
+                                alt="Villa Contemporaine & Staff" loading="lazy"><span
+                                class="tag mb-2">Décoration</span>
+                            <p class="meta mb-1">Quartier Gassi</p>
+                            <h3>Villa Contemporaine & Staff</h3>
+                            <p class="text-secondary mb-0">Faux plafonds en staff, éclairage LED indirect, carrelage
+                                grand format et peinture décorative.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 proj" data-cat="peinture">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMv1BSxbdRgZ-0V91ouHibIyM9C-jVovF1pTI35czG3lyKmfYBydpXZ6oShBNJxSfx2ZJBOl5TO4U5x01lkeUBXmH77Xc9lUq54dOYDYOtbbWiDze6YJSdCaEgecU596V-dyPcMuDQ0OHUgjAYiZuKl9aeaJ-qd_yqb8p6IiqWAdAPtWQDNNr-RfqFycw4yID6kHl0mJ_VkjAW16w9N8SflFgj76e27rdHxx3KEDz_mMvhZV0GxufWg"
+                                alt="Bâtiment Institutionnel" loading="lazy"><span class="tag mb-2">Revêtement
+                                Façade</span>
+                            <p class="meta mb-1">Farcha</p>
+                            <h3>Bâtiment Institutionnel</h3>
+                            <p class="text-secondary mb-0">Peinture thermorégulatrice élastomère : protection
+                                anti-fissuration et anti-poussière.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 proj" data-cat="gros">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiT_iOvQc_hq0qI9-cy5_Ap_ZpYWK_cT9nB7n5C0BsGqx-Xcur--BOBiM3YZ02N--nDnGbSMkcoOScmmIMyDwNN-ul-lQ2kR30YxjvK-4mXieuuLIBtWpzCEhUCRjGBwOlaUcGJsB7zwsO6_MiMs8Obr19uoTYR9G0fuHjtUcKPmneQ06v1IzOl5-6VpEAKYc90JapFakic0JC7pHeRSet9hLUg2Q3V1PjR1gp1BAgsfFoOhmgSIJs4Q"
+                                alt="Clôtures & Pavage Renforcé" loading="lazy"><span class="tag mb-2">Génie
+                                Civil</span>
+                            <p class="meta mb-1">Chagoua</p>
+                            <h3>Clôtures & Pavage Renforcé</h3>
+                            <p class="text-secondary mb-0">Périmètre sécurisé, semelles filantes, chaînages raidisseurs
+                                et aménagement de caniveaux.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 proj" data-cat="peinture">
+                        <div class="card-bp"><img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDruyxuKNGiy-WrQp5udaKRF3aYUOf4kxBc_52fKfJqt8xG9AD2nRnu5ElMdtHrtSH0TWKR-gBe2RIoisI6xzi09ikB1Qdyy70BPREnUcHy1y2lYc29eeHT1EeCdbxdV1vj55FX68tLubCo6lAgJFF_XT9jNupCyoMEB0iQ1ZAEf5o-EL7iqyKrG4XYToOEBuw2PAroycKZ3x9_HDLbc-_PfL6WnImvtCVvSFANslBpt_4GznsZNkqMxA"
+                                alt="Réfection Décorative Extérieure" loading="lazy"><span class="tag mb-2">Finitions &
+                                Retouches</span>
+                            <p class="meta mb-1">Zone Résidentielle</p>
+                            <h3>Réfection Décorative Extérieure</h3>
+                            <p class="text-secondary mb-0">Ponçage fin, sous-couche hydrofuge et finitions aux teintes
+                                de terre sahéliennes.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="comparison-item">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="fw-bold text-warning small">Coulage du Béton &amp; Chaleur</span>
-                    <span class="badge badge-norm">T&gt; 42°C</span>
-                  </div>
-                  <p class="text-slate-300 mb-1" style="font-size:.8rem;"><strong>Pratique courante :</strong> Coulage en plein soleil sans produit de cure, évaporation brutale.</p>
-                  <div class="comparison-nova"><i class="bi bi-check-circle-fill text-success me-1"></i><strong>NOVA BTP :</strong> Coulage aux heures fraîches + cure chimique humide 7 jours + adjuvants retardateurs.</div>
+            </div>
+        </section>
+        <section class="sec bg-navy">
+            <div class="container">
+                <div class="row g-4 g-lg-5" id="formation">
+                    <div class="col-lg-4 g-lg-5"><span class="eyebrow">Nova BTP Académie</span>
+                        <h2>Développez vos compétences en génie civil</h2>
+                        <p class="mt-3">Formations pratiques pour étudiants, techniciens et professionnels, directement
+                            valorisables sur les chantiers tchadiens.</p>
+                        <p class="small"><span class="material-symbols-outlined">verified</span> <b>Certificat technique
+                                pratique</b> délivré à l'issue des ateliers.</p>
+                        <a class="btn btn-wa"
+                            href="https://wa.me/23568383708?text=Bonjour,%20je%20souhaite%20m'inscrire%20%C3%A0%20la%20formation%20en%20g%C3%A9nie%20civil%20Nova%20BTP."
+                            target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span> Demander
+                            des informations</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex gap-3 border-bottom border-white border-opacity-10 py-3"><span
+                                class="step-n">1</span>
+                            <div>
+                                <h3 class="mb-1">Techniques de construction modernes</h3>
+                                <p class="mb-0 opacity-75 small">Matériaux, formulations de béton, coulage, vibration et
+                                    cure adaptée au climat aride.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 border-bottom border-white border-opacity-10 py-3"><span
+                                class="step-n">2</span>
+                            <div>
+                                <h3 class="mb-1">Lecture de plans & béton armé</h3>
+                                <p class="mb-0 opacity-75 small">Plans de coffrage, armatures, nomenclature de
+                                    ferraillage, réservations techniques.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 border-bottom border-white border-opacity-10 py-3"><span
+                                class="step-n">3</span>
+                            <div>
+                                <h3 class="mb-1">Bases du génie civil et métrés</h3>
+                                <p class="mb-0 opacity-75 small">Devis quantitatifs (DQE), volumes de terrassement et
+                                    dosages de mortier.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 border-bottom border-white border-opacity-10 py-3"><span
+                                class="step-n">4</span>
+                            <div>
+                                <h3 class="mb-1">Sécurité de chantier (QHSE)</h3>
+                                <p class="mb-0 opacity-75 small">Prévention des risques, EPI, gestion des déchets et
+                                    protocoles d'urgence.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 border-bottom border-white border-opacity-10 py-3"><span
+                                class="step-n">5</span>
+                            <div>
+                                <h3 class="mb-1">Gestion et planification des travaux</h3>
+                                <p class="mb-0 opacity-75 small">Ordonnancement, pilotage (OPC), approvisionnements et
+                                    journal de chantier.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="comparison-item">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <span class="fw-bold text-warning small">Peintures &amp; Revêtements Façade</span>
-                    <span class="badge badge-norm">Résistance UV</span>
-                  </div>
-                  <p class="text-slate-300 mb-1" style="font-size:.8rem;"><strong>Pratique courante :</strong> Peintures à l'eau simples décolorées après 6 mois d'harmattan.</p>
-                  <div class="comparison-nova"><i class="bi bi-check-circle-fill text-success me-1"></i><strong>NOVA BTP :</strong> Résines acryliques siloxanes hydrofuges, anti-alcalines et résistantes au sable soufflé.</div>
+            </div>
+        </section>
+        <section class="sec bg-soft">
+            <div class="container">
+                <div class="mb-5"><span class="eyebrow">Méthodologie éprouvée</span>
+                    <h2>Comment travaillons-nous ?</h2>
+                    <p class="lead-s mt-2">Une démarche claire et transparente pour garantir le succès technique et
+                        financier de chaque réalisation.</p>
                 </div>
-              </div>
-              <div class="d-flex align-items-center justify-content-between border-top border-secondary mt-4 pt-3">
-                <span class="text-muted small">Consultez notre référentiel technique</span>
-                <button class="btn btn-link text-warning small fw-bold p-0" id="btn-guide-home">Télécharger le guide</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS PREVIEW -->
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end gap-4 mb-5">
-          <div>
-            <div class="section-label mb-2"><i class="bi bi-buildings text-orange me-1"></i> PORTFOLIO CHANTIERS</div>
-            <h2 class="section-title mb-1">Nos Réalisations d'Envergure au Tchad</h2>
-            <p class="text-muted small">Bâtiments administratifs, villas grand standing, sièges d'entreprises et rénovations complexes.</p>
-          </div>
-          <div class="project-tabs" id="project-filter-tabs">
-            <button class="project-tab active" data-filter="all">Tous</button>
-            <button class="project-tab" data-filter="gros-oeuvre">Gros Oeuvre</button>
-            <button class="project-tab" data-filter="peinture">Peinture</button>
-            <button class="project-tab" data-filter="renovation">Rénovation</button>
-          </div>
-        </div>
-        <div class="row g-4" id="home-projects-grid"></div>
-        <div class="text-center mt-5">
-          <button class="btn btn-outline-navy btn-lg nav-link-page" data-page="projects">
-            Voir la galerie complète (120+ références) <i class="bi bi-arrow-right ms-2"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRAINING PREVIEW -->
-    <section class="py-section bg-navy text-white position-relative overflow-hidden">
-      <div class="container-xl position-relative" style="z-index:2;">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-7">
-            <span class="badge bg-orange text-white mb-3"><i class="bi bi-mortarboard me-1"></i> NOVA BTP ACADÉMIE TCHAD</span>
-            <h2 class="section-title text-white">Pôle Formation Professionnelle et Métiers du BTP</h2>
-            <p class="text-slate-300">Parce que la qualité des ouvrages dépend de la qualification des hommes sur le terrain, NOVA BTP dispense des formations certifiantes intensives alliant théorie d'ingénierie et pratique réelle sur nos chantiers.</p>
-            <div class="row g-3 mt-3" id="home-training-modules"></div>
-            <div class="d-flex align-items-center gap-4 mt-4">
-              <button class="btn btn-orange nav-link-page" data-page="training">Consulter le calendrier &amp; Inscription</button>
-              <div class="text-muted small d-flex align-items-center gap-1">
-                <i class="bi bi-check-circle-fill text-success"></i> Attestation reconnue et stage pratique garanti
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="training-img-wrap position-relative">
-              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
-                   alt="Formation BTP Nova BTP Académie" class="img-fluid rounded-3 w-100" style="height:380px;object-fit:cover;" />
-              <div class="training-img-badge">
-                <div class="d-flex justify-content-between align-items-center fw-bold text-warning mb-1 small">
-                  <span>PROCHAINE SESSION : OCTOBRE 2026</span>
-                  <span class="text-success">Inscriptions ouvertes</span>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp"><span class="step-n">01</span>
+                            <h3 class="mt-2">Échange</h3>
+                            <p class="text-secondary mb-0">Compréhension du projet, des attentes, des délais et du
+                                budget.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp"><span class="step-n">02</span>
+                            <h3 class="mt-2">Étude technique</h3>
+                            <p class="text-secondary mb-0">Analyse du terrain, des contraintes géotechniques et des
+                                spécifications.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp"><span class="step-n">03</span>
+                            <h3 class="mt-2">Planification</h3>
+                            <p class="text-secondary mb-0">Calendrier précis, ressources certifiées et devis détaillé
+                                transparent.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-bp"><span class="step-n">04</span>
+                            <h3 class="mt-2">Réalisation</h3>
+                            <p class="text-secondary mb-0">Équipes qualifiées, contrôles QHSE réguliers, réception sans
+                                réserve.</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-muted mb-0" style="font-size:.75rem;">Ateliers pratiques au centre technique de Gassi (logiciels DAO, métré, staff et sécurité chantier).</p>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="py-section bg-light border-bottom">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2"><i class="bi bi-star-fill text-warning me-1"></i> TÉMOIGNAGES DE CONFIANCE</div>
-          <h2 class="section-title">Ce Que Disent les Maîtres d'Ouvrage</h2>
-          <p class="text-muted small">Institutions publiques, directeurs généraux et propriétaires privés témoignent de notre rigueur.</p>
-        </div>
-        <div class="row g-4" id="home-testimonials"></div>
-      </div>
-    </section>
-
-    <!-- LOCATION -->
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-5">
-            <div class="section-label mb-3"><i class="bi bi-geo-alt text-orange me-1"></i> BASE ET ZONE D'INTERVENTION</div>
-            <h2 class="section-title">Implanté à N'Djamena, Mobile dans Tout le Tchad</h2>
-            <p class="text-muted">Notre siège et notre parc matériel principal sont situés dans le <strong>Quartier Gassi</strong>, carrefour stratégique pour le déploiement rapide de nos équipes et engins lourds.</p>
-            <div class="d-flex flex-column gap-3 mt-4">
-              <div class="location-info-card">
-                <div class="fw-bold text-navy small mb-1">Siège &amp; Direction Technique</div>
-                <div class="text-muted small">N'Djamena, Quartier Gassi (Axe Principal, près du Rond-Point Gassi), République du Tchad</div>
-              </div>
-              <div class="location-info-card">
-                <div class="fw-bold text-navy small mb-1">Parc Logistique &amp; Stock Matériaux</div>
-                <div class="text-muted small">Base Opérationnelle et Parc Matériel 3 500 m² — Gassi, N'Djamena</div>
-              </div>
-              <div class="location-info-card">
-                <div class="fw-bold text-navy small mb-1">Provinces Desservies</div>
-                <div class="text-muted small">Moundou, Sarh, Abéché, Am-Timan, Mongo, Bol (Lac Tchad), Kélo, Doba.</div>
-              </div>
-            </div>
-            <button class="btn btn-navy mt-4 nav-link-page" data-page="contact">
-              Itinéraire &amp; Contacter le Bureau de Gassi <i class="bi bi-arrow-right text-warning ms-2"></i>
-            </button>
-          </div>
-          <div class="col-lg-7">
-            <div class="map-container rounded-3 overflow-hidden border">
-              <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=15.030%2C12.090%2C15.100%2C12.140&layer=mapnik&marker=12.115%2C15.061"
-                      style="width:100%;height:420px;border:0;"
-                      title="Localisation Nova BTP SARL — Quartier Gassi, N'Djamena"
-                      loading="lazy"></iframe>
-              <div class="map-overlay-badge">
-                <i class="bi bi-geo-alt-fill text-orange me-1"></i>
-                <strong>NOVA BTP SARL</strong> — Quartier Gassi, N'Djamena
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-section bg-light border-top">
-      <div class="container-xl">
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <div class="section-label mb-3">QUESTIONS FRÉQUENTES</div>
-            <h2 class="section-title">Tout ce que vous devez savoir sur Nova BTP</h2>
-            <p class="text-muted small">Des réponses claires et directes à vos interrogations sur nos services, délais et garanties.</p>
-            <button class="btn btn-orange mt-3" id="btn-faq-contact">Poser une autre question</button>
-          </div>
-          <div class="col-lg-8">
-            <div class="accordion accordion-nova" id="faqAccordion"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="cta-final-section py-5">
-      <div class="container-xl text-center">
-        <h2 class="display-6 fw-black text-white mb-3">Votre Projet Commence Ici</h2>
-        <p class="lead text-muted mb-4">Devis gratuit sous 24h — Visite technique sans engagement — Garantie décennale sur tous les ouvrages</p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <button class="btn btn-orange btn-lg" id="btn-cta-quote">
-            <i class="bi bi-file-earmark-text me-2"></i> Demander un Devis Gratuit
-          </button>
-          <a href="tel:+23568383708" class="btn btn-glass-dark btn-lg">
-            <i class="bi bi-telephone-fill me-2"></i> Appeler Directement
-          </a>
-          <a href="https://wa.me/23568383708" target="_blank" class="btn btn-whatsapp btn-lg">
-            <i class="bi bi-whatsapp me-2"></i> WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </div><!-- /page-home -->
-
-
-  <!-- ======================================================
-       PAGE: ABOUT
-  ====================================================== -->
-  <div id="page-about" class="page-content d-none">
-    <section class="page-hero-section">
-      <div class="container-xl">
-        <span class="badge bg-orange text-white mb-3">ENTREPRISE TCHADIENNE DE RÉFÉRENCE</span>
-        <h1 class="page-hero-title">À Propos de NOVA BTP SARL</h1>
-        <p class="page-hero-subtitle">Bâtir l'avenir du Sahel avec rigueur technique, intégrité et passion du bel ouvrage. Découvrez l'histoire, la vision et l'équipe d'ingénieurs qui pilotent nos chantiers.</p>
-      </div>
-    </section>
-
-    <section class="py-section bg-light border-bottom">
-      <div class="container-xl">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="section-label mb-3">NOTRE GENÈSE &amp; EXPERTISE</div>
-            <h2 class="section-title">Une Réponse Concrète aux Défis Constructifs du Tchad</h2>
-            <p class="text-muted"><strong>NOVA BTP SARL</strong> est née d'un constat : la plupart des pathologies du bâtiment constatées à N'Djamena (fissures, tassements différentiels, remontées capillaires, dégradations thermiques) sont évitables grâce à une rigueur d'ingénierie sans compromis.</p>
-            <p class="text-muted">Depuis notre siège et base logistique de Gassi, nous mobilisons des équipements modernes, un laboratoire de contrôle béton et des équipes dévouées pour concrétiser des projets d'envergure dans les délais et budgets convenus.</p>
-            <div class="row g-3 mt-2">
-              <div class="col-6">
-                <div class="stat-box-light">
-                  <div class="stat-val-orange">100%</div>
-                  <div class="fw-bold small">Capitaux Tchadiens</div>
-                  <div class="text-muted" style="font-size:.75rem;">Engagés pour le développement local</div>
+        </section>
+        <section class="sec bg-navy">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <h2>Vous avez un projet de construction ou de rénovation à N'Djamena ou en province ?</h2>
+                        <p class="opacity-75 mb-0">Parlons de votre projet et trouvons une solution solide, durable et
+                            adaptée à vos exigences techniques et budgétaires.</p>
+                    </div>
+                    <div class="col-lg-4 d-grid gap-2"><a class="btn btn-orange" href="contact.html#devis"><span
+                                class="material-symbols-outlined">edit_document</span> DEMANDER UN DEVIS GRATUIT</a><a
+                            class="btn btn-outline-light" href="tel:+23568383708"><span
+                                class="material-symbols-outlined">phone_in_talk</span> APPELER +235 68 38 37 08</a>
+                    </div>
                 </div>
-              </div>
-              <div class="col-6">
-                <div class="stat-box-light">
-                  <div class="stat-val-navy">Cat. A</div>
-                  <div class="fw-bold small">Agrément Ministériel</div>
-                  <div class="text-muted" style="font-size:.75rem;">Infrastructures et Bâtiments</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3"><img src="assets/logo.png" alt="Nova BTP"
+                            style="height:48px;width:auto;background:#fff;border-radius:4px"><b
+                            class="text-white font-outfit">NOVA BTP SARL</b></div>
+                    <p>Entreprise tchadienne de référence en BTP, génie civil, rénovation, peinture, décoration et
+                        formation technique. Bâtissons l'avenir du Tchad avec rigueur et excellence.</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-white border rounded-4 p-5 text-center shadow-sm">
-              <div class="about-logo-display mb-4">
-                <div class="about-logo-icon">N</div>
-                <div>
-                  <div class="about-logo-name">NOVA BTP SARL</div>
-                  <div class="about-logo-tagline">Ingénierie &amp; BTP Tchad</div>
+                <div class="col-6 col-lg-2">
+                    <h4>Navigation</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Accueil</a></li>
+                        <li class="mb-2"><a href="a-propos.html">À Propos</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="index.html#realisations">Réalisations</a></li>
+                        <li class="mb-2"><a href="index.html#formation">Formation</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-              </div>
-              <p class="text-muted small fst-italic">"Bâtissons l'avenir du Sahel avec rigueur et intégrité technique"</p>
-              <div class="row g-2 mt-3">
-                <div class="col-4 text-center"><div class="fw-black fs-4 text-orange">120+</div><div class="small text-muted">Projets</div></div>
-                <div class="col-4 text-center"><div class="fw-black fs-4 text-navy">15+</div><div class="small text-muted">Années</div></div>
-                <div class="col-4 text-center"><div class="fw-black fs-4 text-orange">280+</div><div class="small text-muted">Formés</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2">MISSION ET VALEURS</div>
-          <h2 class="section-title">Les Piliers de notre Engagement Technique</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="value-card text-center">
-              <div class="value-icon mx-auto mb-3"><i class="bi bi-bullseye fs-4 text-orange"></i></div>
-              <h5 class="fw-bold text-navy">Excellence Technique</h5>
-              <p class="text-muted small">Respect strict des normes BAEL 91, Eurocode 2 et standards de résistance sahélienne.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="value-card text-center">
-              <div class="value-icon mx-auto mb-3"><i class="bi bi-heart-pulse fs-4 text-orange"></i></div>
-              <h5 class="fw-bold text-navy">Intégrité &amp; Transparence</h5>
-              <p class="text-muted small">Devis contractuels clairs, sans surprise ni dépassement non validé par avenant.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="value-card text-center">
-              <div class="value-icon mx-auto mb-3"><i class="bi bi-lightning-charge fs-4 text-orange"></i></div>
-              <h5 class="fw-bold text-navy">Réactivité Terrain</h5>
-              <p class="text-muted small">Urgences chantier traitées 24/7. Déploiement rapide depuis notre base de Gassi.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="value-card text-center">
-              <div class="value-icon mx-auto mb-3"><i class="bi bi-people fs-4 text-orange"></i></div>
-              <h5 class="fw-bold text-navy">Développement Local</h5>
-              <p class="text-muted small">100% capitaux tchadiens. Formation continue des jeunes techniciens du Tchad.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-section bg-light border-top border-bottom">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2"><i class="bi bi-people text-orange me-1"></i> NOTRE ÉQUIPE</div>
-          <h2 class="section-title">L'Expertise au Service de Vos Projets</h2>
-          <p class="text-muted small">Une équipe pluridisciplinaire d'ingénieurs, d'architectes et de techniciens aguerris.</p>
-        </div>
-        <div class="row g-4" id="about-team-grid"></div>
-      </div>
-    </section>
-
-    <section class="py-section bg-navy text-white">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <span class="badge bg-orange mb-3">CERTIFICATIONS &amp; AGRÉMENTS</span>
-          <h2 class="section-title text-white">Une Entreprise Légalement Reconnue</h2>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-4">
-            <div class="cert-card text-center">
-              <div class="cert-icon mb-3"><i class="bi bi-patch-check-fill fs-2 text-warning"></i></div>
-              <h5 class="fw-bold">Agrément Technique Cat. A</h5>
-              <p class="text-slate-300 small">Ministère des Infrastructures et du Désenclavement du Tchad</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cert-card text-center">
-              <div class="cert-icon mb-3"><i class="bi bi-file-earmark-check-fill fs-2 text-warning"></i></div>
-              <h5 class="fw-bold">RCCM Enregistré</h5>
-              <p class="text-slate-300 small">N° TD-NDJ-01-2022-B12 — Registre du Commerce N'Djamena</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="cert-card text-center">
-              <div class="cert-icon mb-3"><i class="bi bi-shield-fill-check fs-2 text-warning"></i></div>
-              <h5 class="fw-bold">Couverture CNPS 100%</h5>
-              <p class="text-slate-300 small">Déclaration sociale complète de tous les ouvriers et techniciens</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!-- /page-about -->
-
-
-  <!-- ======================================================
-       PAGE: SERVICES
-  ====================================================== -->
-  <div id="page-services" class="page-content d-none">
-    <section class="page-hero-section">
-      <div class="container-xl">
-        <span class="badge bg-orange text-white mb-3">EXPERTISE MULTI-CORPS D'ÉTAT</span>
-        <h1 class="page-hero-title">Nos 6 Pôles d'Expertise BTP</h1>
-        <p class="page-hero-subtitle">Solutions clés en main adaptées aux contraintes spécifiques du climat sahélien et des sols de N'Djamena.</p>
-      </div>
-    </section>
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div id="services-detail-grid"></div>
-      </div>
-    </section>
-    <section class="py-section bg-light border-top">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2"><i class="bi bi-thermometer-sun text-orange me-1"></i> NORMES SAHÉLIENNES</div>
-          <h2 class="section-title">Nos Standards Techniques Adaptés au Sahel</h2>
-        </div>
-        <div class="row g-4" id="sahelian-norms-grid"></div>
-      </div>
-    </section>
-    <section class="py-4 bg-orange text-white">
-      <div class="container-xl">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
-          <div>
-            <h3 class="fw-black mb-1">Besoin d'un corps d'état spécifique ?</h3>
-            <p class="mb-0 opacity-75">Notre bureau d'études évalue votre projet et vous remet un devis détaillé sous 48h.</p>
-          </div>
-          <div class="d-flex gap-2">
-            <button class="btn btn-white text-orange fw-bold" id="btn-services-quote">Demander un Devis</button>
-            <a href="tel:+23568383708" class="btn btn-outline-white fw-bold"><i class="bi bi-telephone me-1"></i>Appeler</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!-- /page-services -->
-
-
-  <!-- ======================================================
-       PAGE: PROJECTS
-  ====================================================== -->
-  <div id="page-projects" class="page-content d-none">
-    <section class="page-hero-section">
-      <div class="container-xl">
-        <span class="badge bg-orange text-white mb-3">PORTFOLIO</span>
-        <h1 class="page-hero-title">Nos Réalisations</h1>
-        <p class="page-hero-subtitle">Plus de 120 projets livrés au Tchad. Bâtiments résidentiels, industriels, sièges d'entreprises et réhabilitations complexes.</p>
-      </div>
-    </section>
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center" id="projects-filter-full">
-          <button class="project-tab active" data-filter="all">Tous les projets</button>
-          <button class="project-tab" data-filter="gros-oeuvre">Gros Oeuvre</button>
-          <button class="project-tab" data-filter="peinture">Peinture &amp; Finition</button>
-          <button class="project-tab" data-filter="renovation">Rénovation</button>
-          <button class="project-tab" data-filter="deco">Décoration Intérieure</button>
-        </div>
-        <div class="row g-4" id="projects-full-grid"></div>
-      </div>
-    </section>
-  </div><!-- /page-projects -->
-
-
-  <!-- ======================================================
-       PAGE: TRAINING
-  ====================================================== -->
-  <div id="page-training" class="page-content d-none">
-    <section class="page-hero-section">
-      <div class="container-xl">
-        <span class="badge bg-orange text-white mb-3"><i class="bi bi-mortarboard me-1"></i> NOVA BTP ACADÉMIE</span>
-        <h1 class="page-hero-title">Formation Professionnelle en Génie Civil</h1>
-        <p class="page-hero-subtitle">Programmes certifiants pour techniciens, conducteurs de travaux et professionnels du BTP au Tchad.</p>
-      </div>
-    </section>
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="text-center mb-5">
-          <div class="section-label mb-2">NOS MODULES DE FORMATION</div>
-          <h2 class="section-title">5 Modules Certifiants et Pratiques</h2>
-        </div>
-        <div id="training-modules-grid" class="d-flex flex-column gap-4"></div>
-      </div>
-    </section>
-    <section class="py-section bg-navy text-white">
-      <div class="container-xl">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="section-label mb-3">POURQUOI NOUS CHOISIR</div>
-            <h2 class="section-title text-white">L'Académie Nova BTP : Votre Tremplin Professionnel</h2>
-            <div class="d-flex flex-column gap-3 mt-4">
-              <div class="d-flex gap-3"><i class="bi bi-check-circle-fill text-success mt-1"></i><div><strong>Attestation Technique Reconnue</strong><p class="text-muted small mb-0">Certificat officiel délivré à l'issue de validations en situation de chantier réel.</p></div></div>
-              <div class="d-flex gap-3"><i class="bi bi-check-circle-fill text-success mt-1"></i><div><strong>91% d'Insertion Professionnelle</strong><p class="text-muted small mb-0">Plus de 280 techniciens formés, pleinement actifs dans le BTP tchadien.</p></div></div>
-              <div class="d-flex gap-3"><i class="bi bi-check-circle-fill text-success mt-1"></i><div><strong>Stage Pratique Garanti</strong><p class="text-muted small mb-0">Immersion directe sur nos chantiers réels de N'Djamena sous encadrement d'experts.</p></div></div>
-              <div class="d-flex gap-3"><i class="bi bi-check-circle-fill text-success mt-1"></i><div><strong>Agrément Ministériel</strong><p class="text-muted small mb-0">Cursus soutenu par les référentiels de la formation professionnelle au Tchad.</p></div></div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
-                 alt="Formation Nova BTP" class="img-fluid rounded-3" style="height:380px;object-fit:cover;width:100%;" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-section bg-light border-top">
-      <div class="container-xl">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="section-label mb-3">INSCRIPTION</div>
-            <h2 class="section-title">Rejoindre la Prochaine Session</h2>
-            <p class="text-muted">Les sessions démarrent le premier lundi de chaque mois. Remplissez le formulaire ou appelez-nous directement.</p>
-            <div class="alert-nova mt-3">
-              <i class="bi bi-calendar-event-fill text-orange me-2"></i>
-              <strong>Prochaine session :</strong> Octobre 2026 — Inscriptions ouvertes
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-form-card">
-              <h5 class="fw-bold mb-4">Formulaire d'Inscription Rapide</h5>
-              <form id="training-form">
-                <div class="mb-3"><input type="text" class="form-control" placeholder="Nom et Prénom *" required /></div>
-                <div class="mb-3"><input type="tel" class="form-control" placeholder="Téléphone *" required /></div>
-                <div class="mb-3">
-                  <select class="form-select">
-                    <option value="">Module souhaité *</option>
-                    <option>Module 01 — Techniques de construction modernes</option>
-                    <option>Module 02 — Lecture et interprétation de plans</option>
-                    <option>Module 03 — Bases du génie civil et métrés</option>
-                    <option>Module 04 — Techniques et sécurité de chantier</option>
-                    <option>Module 05 — Gestion et planification des travaux</option>
-                  </select>
+                <div class="col-6 col-lg-3">
+                    <h4>Nos Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="material-symbols-outlined">domain</span> Génie civil &amp; Gros
+                            œuvre</li>
+                        <li class="mb-2"><span class="material-symbols-outlined">construction</span> Rénovation &amp;
+                            Réhabilitation</li>
+                        <li class="mb-2"><span class="material-symbols-outlined">format_paint</span> Peinture &amp;
+                            Finitions</li>
+                        <li class="mb-2"><span class="material-symbols-outlined">architecture</span> Décoration
+                            d'intérieur</li>
+                        <li class="mb-2"><span class="material-symbols-outlined">school</span> Formations certifiantes
+                        </li>
+                    </ul>
                 </div>
-                <div class="mb-3"><input type="text" class="form-control" placeholder="Niveau / Expérience" /></div>
-                <button type="submit" class="btn btn-orange w-100"><i class="bi bi-send me-2"></i> Envoyer ma demande</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!-- /page-training -->
-
-
-  <!-- ======================================================
-       PAGE: CONTACT
-  ====================================================== -->
-  <div id="page-contact" class="page-content d-none">
-    <section class="page-hero-section">
-      <div class="container-xl">
-        <span class="badge bg-orange text-white mb-3">CONTACT &amp; DEVIS</span>
-        <h1 class="page-hero-title">Contactez Nova BTP SARL</h1>
-        <p class="page-hero-subtitle">Devis gratuit sous 24h — Visite technique sans engagement — Disponible Lun-Sam 07h30 à 18h00</p>
-      </div>
-    </section>
-    <section class="py-section bg-white">
-      <div class="container-xl">
-        <div class="row g-5">
-          <div class="col-lg-5">
-            <div class="section-label mb-4">NOS COORDONNÉES</div>
-            <div class="d-flex flex-column gap-4">
-              <div class="contact-info-item">
-                <div class="contact-info-icon"><i class="bi bi-geo-alt-fill text-orange fs-5"></i></div>
-                <div>
-                  <h6 class="fw-bold text-navy mb-1">Siège Social &amp; Direction</h6>
-                  <p class="text-muted small mb-0">N'Djamena, Quartier Gassi, Axe Principal, près du Rond-Point Gassi, République du Tchad</p>
+                <div class="col-lg-3">
+                    <h4>Contact &amp; Siège</h4>
+                    <p class="mb-2"><span class="material-symbols-outlined">pin_drop</span> N'Djamena, Quartier Gassi,
+                        Tchad</p>
+                    <p class="mb-2"><span class="material-symbols-outlined">phone</span> +235 68 38 37 08<br>+235 87 91
+                        12 08 · +235 91 71 98 94</p>
+                    <p class="mb-2"><span class="material-symbols-outlined">badge</span> Responsable : Asrane Gauthier
+                    </p>
+                    <p><span class="material-symbols-outlined">mail</span> <a
+                            href="mailto:contact@novabtptchad.com">contact@novabtptchad.com</a></p>
                 </div>
-              </div>
-              <div class="contact-info-item">
-                <div class="contact-info-icon"><i class="bi bi-telephone-fill text-orange fs-5"></i></div>
-                <div>
-                  <h6 class="fw-bold text-navy mb-1">Téléphones</h6>
-                  <a href="tel:+23568383708" class="d-block text-muted small text-decoration-none">+235 68 38 37 08 (Direction)</a>
-                  <a href="tel:+23587911208" class="d-block text-muted small text-decoration-none">+235 87 91 12 08 (Bureau d'études)</a>
-                  <a href="tel:+23591719894" class="d-block text-muted small text-decoration-none">+235 91 71 98 94 (Urgences 24/7)</a>
-                </div>
-              </div>
-              <div class="contact-info-item">
-                <div class="contact-info-icon"><i class="bi bi-envelope-fill text-orange fs-5"></i></div>
-                <div>
-                  <h6 class="fw-bold text-navy mb-1">Email</h6>
-                  <a href="mailto:contact@novabtptchad.com" class="text-muted small text-decoration-none">contact@novabtptchad.com</a>
-                </div>
-              </div>
-              <div class="contact-info-item">
-                <div class="contact-info-icon"><i class="bi bi-clock-fill text-orange fs-5"></i></div>
-                <div>
-                  <h6 class="fw-bold text-navy mb-1">Horaires</h6>
-                  <p class="text-muted small mb-0">Lundi — Samedi : 07h30 — 18h00<br><span class="text-success fw-bold">Urgences chantiers : 24h/7j</span></p>
-                </div>
-              </div>
             </div>
-            <a href="https://wa.me/23568383708" target="_blank" class="btn btn-whatsapp w-100 mt-4">
-              <i class="bi bi-whatsapp me-2"></i> Contacter sur WhatsApp
-            </a>
-          </div>
-          <div class="col-lg-7">
-            <div class="contact-form-card">
-              <h4 class="fw-bold mb-1">Demande de Devis Gratuit</h4>
-              <p class="text-muted small mb-4">Réponse garantie sous 24h ouvrées. Devis contractuel sans engagement.</p>
-              <form id="contact-form">
-                <div class="row g-3">
-                  <div class="col-sm-6">
-                    <label class="form-label small fw-semibold">Nom et Prénom *</label>
-                    <input type="text" class="form-control" required />
-                  </div>
-                  <div class="col-sm-6">
-                    <label class="form-label small fw-semibold">Téléphone *</label>
-                    <input type="tel" class="form-control" required />
-                  </div>
-                  <div class="col-sm-6">
-                    <label class="form-label small fw-semibold">Email</label>
-                    <input type="email" class="form-control" />
-                  </div>
-                  <div class="col-sm-6">
-                    <label class="form-label small fw-semibold">Type de projet *</label>
-                    <select class="form-select">
-                      <option value="">Sélectionner...</option>
-                      <option>Génie Civil &amp; Construction</option>
-                      <option>Décoration &amp; Architecture d'Intérieur</option>
-                      <option>Peinture &amp; Revêtements Techniques</option>
-                      <option>Rénovation &amp; Réhabilitation</option>
-                      <option>Retouche &amp; Finitions de Précision</option>
-                      <option>Formation Professionnelle</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label small fw-semibold">Localisation du projet</label>
-                    <input type="text" class="form-control" placeholder="Quartier, ville..." />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label small fw-semibold">Description du projet *</label>
-                    <textarea class="form-control" rows="4" placeholder="Décrivez votre projet, la surface approximative, les travaux souhaités..." required></textarea>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label small fw-semibold">Budget estimé (FCFA)</label>
-                    <select class="form-select">
-                      <option value="">Non défini / À évaluer</option>
-                      <option>Moins de 5 000 000 FCFA</option>
-                      <option>5 000 000 à 20 000 000 FCFA</option>
-                      <option>20 000 000 à 100 000 000 FCFA</option>
-                      <option>Plus de 100 000 000 FCFA</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-orange btn-lg w-100">
-                      <i class="bi bi-send-fill me-2"></i> Envoyer ma Demande de Devis
-                    </button>
-                    <p class="text-muted text-center mt-2" style="font-size:.75rem;">Visite technique gratuite et sans engagement dans tous les arrondissements de N'Djamena.</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+            <div class="copy">© 2026 Nova BTP SARL — Tous droits réservés. Registre du commerce &amp; Agrément BTP
+                Tchad.</div>
         </div>
-        <div class="map-container rounded-3 overflow-hidden border mt-5">
-          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=15.030%2C12.090%2C15.100%2C12.140&layer=mapnik&marker=12.115%2C15.061"
-                  style="width:100%;height:380px;border:0;"
-                  title="Nova BTP SARL — Gassi N'Djamena"
-                  loading="lazy"></iframe>
-          <div class="map-overlay-badge">
-            <i class="bi bi-geo-alt-fill text-orange me-1"></i>
-            <strong>NOVA BTP SARL</strong> — Quartier Gassi, N'Djamena, Tchad
-          </div>
-        </div>
-      </div>
-    </section>
-  </div><!-- /page-contact -->
-
-</main><!-- /app-main -->
-
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="container-xl">
-    <div class="row g-5 pb-5 border-bottom border-secondary border-opacity-25">
-      <div class="col-lg-4">
-        <div class="footer-logo mb-3">
-          <div class="footer-logo-icon">N</div>
-          <div>
-            <div class="footer-logo-name">NOVA BTP SARL</div>
-            <div class="footer-logo-tagline">Ingénierie &amp; BTP Tchad</div>
-          </div>
-        </div>
-        <p class="text-muted small">Entreprise tchadienne de référence en BTP, génie civil, rénovation, peinture, décoration et formation technique. Bâtissons l'avenir du Tchad avec rigueur et excellence.</p>
-        <div class="d-flex align-items-center gap-2 bg-dark bg-opacity-50 px-3 py-2 rounded border border-secondary w-fit mt-3">
-          <i class="bi bi-shield-check text-warning"></i>
-          <span class="text-warning small fw-semibold">Agrément BTP &amp; RCCM N'Djamena (Catégorie A)</span>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-2">
-        <h6 class="text-white fw-bold text-uppercase tracking-wider mb-3">Navigation</h6>
-        <ul class="list-unstyled footer-links">
-          <li><button class="nav-link-page" data-page="home">Accueil</button></li>
-          <li><button class="nav-link-page" data-page="about">À Propos</button></li>
-          <li><button class="nav-link-page" data-page="services">Nos Services</button></li>
-          <li><button class="nav-link-page" data-page="projects">Réalisations</button></li>
-          <li><button class="nav-link-page" data-page="training">Formation</button></li>
-          <li><button class="nav-link-page" data-page="contact">Contact</button></li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-lg-3">
-        <h6 class="text-white fw-bold text-uppercase tracking-wider mb-3">Nos Pôles</h6>
-        <ul class="list-unstyled footer-links">
-          <li><button class="nav-link-page" data-page="services">Génie Civil &amp; Construction</button></li>
-          <li><button class="nav-link-page" data-page="services">Décoration &amp; Intérieur</button></li>
-          <li><button class="nav-link-page" data-page="services">Peinture &amp; Revêtements</button></li>
-          <li><button class="nav-link-page" data-page="services">Rénovation &amp; Réhabilitation</button></li>
-          <li><button class="nav-link-page" data-page="services">Finitions de Précision</button></li>
-          <li><button class="nav-link-page" data-page="training">Formation BTP</button></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <h6 class="text-white fw-bold text-uppercase tracking-wider mb-3">Contact Direct</h6>
-        <div class="d-flex flex-column gap-3">
-          <div class="d-flex gap-2 align-items-start">
-            <i class="bi bi-geo-alt-fill text-orange mt-1 flex-shrink-0"></i>
-            <span class="text-muted small">Quartier Gassi, N'Djamena, Tchad</span>
-          </div>
-          <div class="d-flex gap-2 align-items-center">
-            <i class="bi bi-telephone-fill text-orange flex-shrink-0"></i>
-            <a href="tel:+23568383708" class="text-muted small text-decoration-none">+235 68 38 37 08</a>
-          </div>
-          <div class="d-flex gap-2 align-items-center">
-            <i class="bi bi-envelope-fill text-orange flex-shrink-0"></i>
-            <a href="mailto:contact@novabtptchad.com" class="text-muted small text-decoration-none">contact@novabtptchad.com</a>
-          </div>
-          <div class="d-flex gap-2 align-items-center">
-            <i class="bi bi-clock-fill text-orange flex-shrink-0"></i>
-            <span class="text-muted small">Lun — Sam : 07h30 — 18h00</span>
-          </div>
-          <a href="https://wa.me/23568383708" target="_blank" class="btn btn-whatsapp btn-sm w-100">
-            <i class="bi bi-whatsapp me-2"></i> Écrire sur WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 pt-4 text-muted small">
-      <span>&copy; 2026 NOVA BTP SARL — Tous droits réservés. N'Djamena, Tchad.</span>
-      <div class="d-flex gap-3">
-        <span>RCCM : TD-NDJ-01-2022-B12</span>
-        <span>|</span>
-        <span>Agrément Cat. A — Min. Infrastructures</span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- WhatsApp FAB -->
-<a href="https://wa.me/23568383708" target="_blank" class="whatsapp-fab" title="Contacter Nova BTP sur WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
-
-<!-- ===== MODALS ===== -->
-
-<!-- Modal Devis -->
-<div class="modal fade" id="quoteModal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <div>
-          <h4 class="modal-title fw-black">Demande de Devis Gratuit</h4>
-          <p class="text-muted small mb-0">Réponse sous 24h — Visite technique sans engagement</p>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body pt-3">
-        <form id="quote-form">
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <label class="form-label small fw-semibold">Nom et Prénom *</label>
-              <input type="text" class="form-control" required />
-            </div>
-            <div class="col-sm-6">
-              <label class="form-label small fw-semibold">Téléphone *</label>
-              <input type="tel" class="form-control" required />
-            </div>
-            <div class="col-12">
-              <label class="form-label small fw-semibold">Service souhaité</label>
-              <select class="form-select" id="quote-service">
-                <option value="">Sélectionner un pôle...</option>
-                <option>Génie Civil &amp; Construction</option>
-                <option>Décoration &amp; Architecture d'Intérieur</option>
-                <option>Peinture &amp; Revêtements Techniques</option>
-                <option>Rénovation &amp; Réhabilitation</option>
-                <option>Retouche &amp; Finitions de Précision</option>
-                <option>Formation Professionnelle</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label class="form-label small fw-semibold">Description du projet</label>
-              <textarea class="form-control" rows="3" placeholder="Surface, travaux, délais souhaités..."></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-orange w-100">
-                <i class="bi bi-send-fill me-2"></i> Envoyer ma demande de devis
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Simulateur de Coût -->
-<div class="modal fade" id="estimatorModal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <div>
-          <h4 class="modal-title fw-black">Simulateur de Coût (FCFA)</h4>
-          <p class="text-muted small mb-0">Estimation indicative calibrée sur les prix sahéliens</p>
-        </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row g-3">
-          <div class="col-sm-6">
-            <label class="form-label small fw-semibold">Type de travaux</label>
-            <select class="form-select" id="est-type">
-              <option value="construction">Construction neuve (béton armé)</option>
-              <option value="renovation">Rénovation complète</option>
-              <option value="peinture">Peinture &amp; revêtements</option>
-              <option value="deco">Décoration intérieure</option>
-              <option value="finition">Retouche &amp; finitions</option>
-            </select>
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label small fw-semibold">Surface (m²)</label>
-            <input type="number" class="form-control" id="est-surface" value="100" min="10" />
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label small fw-semibold">Niveau de finition</label>
-            <select class="form-select" id="est-finition">
-              <option value="standard">Standard</option>
-              <option value="premium">Premium</option>
-              <option value="luxe">Luxe / Grand standing</option>
-            </select>
-          </div>
-          <div class="col-sm-6">
-            <label class="form-label small fw-semibold">Nombre d'étages</label>
-            <select class="form-select" id="est-etages">
-              <option value="1">1 étage (RDC)</option>
-              <option value="2">R+1</option>
-              <option value="3">R+2</option>
-              <option value="4">R+3 et plus</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <div class="estimator-result" id="estimator-result">
-              <div class="estimator-low mb-1">Fourchette estimée :</div>
-              <div class="estimator-range">— FCFA</div>
-              <div class="estimator-label">Ajustez les paramètres pour voir l'estimation</div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="alert-nova">
-              <i class="bi bi-info-circle text-orange me-2"></i>
-              <small>Cette estimation est indicative et ne remplace pas un devis contractuel. Les prix réels dépendent des spécifications techniques détaillées, des accès et de la localisation du chantier.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0 pt-0">
-        <button class="btn btn-orange w-100" id="btn-estimator-to-quote">
-          <i class="bi bi-file-earmark-text me-2"></i> Demander un devis contractuel précis
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Guide Technique -->
-<div class="modal fade" id="technicalGuideModal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold">Guide Technique — Gros Oeuvre &amp; Normes Sahéliennes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <div class="text-center mb-4">
-          <div class="guide-icon-box mx-auto mb-3">
-            <i class="bi bi-file-earmark-pdf-fill fs-1 text-orange"></i>
-          </div>
-          <h4 class="fw-black">Guide Technique Nova BTP SARL</h4>
-          <p class="text-muted">Standards de construction adaptés au climat sahélien du Tchad</p>
-        </div>
-        <div id="technical-guide-norms"></div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-orange" id="btn-guide-to-quote">
-          <i class="bi bi-send me-2"></i> Demander un Devis sur Base de ces Normes
-        </button>
-        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Détail Projet -->
-<div class="modal fade" id="projectDetailModal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body" id="project-detail-content"></div>
-      <div class="modal-footer border-0">
-        <button class="btn btn-orange" id="btn-project-to-quote">
-          <i class="bi bi-file-text me-2"></i> Demander un projet similaire
-        </button>
-        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Toast Succès -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999;">
-  <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert">
-    <div class="d-flex">
-      <div class="toast-body">
-        <i class="bi bi-check-circle-fill me-2"></i>
-        <strong>Demande envoyée !</strong> Nous vous répondrons sous 24h. Merci !
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script>
+    </footer>
+    <div class="mobile-bar d-xl-none"><a href="tel:+23568383708"><span
+                class="material-symbols-outlined">call</span><span>Appeler</span></a><a href="https://wa.me/23568383708"
+            target="_blank" rel="noopener" class="wa"><span
+                class="material-symbols-outlined">chat</span><span>WhatsApp</span></a><a href="contact.html#devis"
+            class="dv"><span class="material-symbols-outlined">edit_document</span><span>Devis</span></a></div>
+    <a class="wa-float d-none d-xl-grid" href="https://wa.me/23568383708" target="_blank" rel="noopener"
+        aria-label="WhatsApp"><span class="material-symbols-outlined">chat</span></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
